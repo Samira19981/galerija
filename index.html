@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+
+    <style>
+        .body{
+            display: block;
+            margin: 8px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            width: 100%;
+            background-color: rgb(34, 159, 231);
+            border-radius: 10px 10px 0px 0px;
+        }
+        #container{
+            max-width: 960px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #allphotos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 4px;
+        }
+        .photo{
+            width: 150px;
+            border: solid 0px;
+        }
+        figcaption{
+            font-size: 12px;
+            text-align: center;
+        }
+        #paragraf{
+            max-width: 940px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        @media screen and (max-width: 1024px) {
+            #allphotos{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            #allphotos{
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            #container{
+                margin: auto auto;
+            }
+            #allphotos{
+                grid-template-columns: 1fr;
+            }
+            h2{
+                font-size: 21px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="container">
+    <h2>Gallery Heading</h2>
+        <div id="allphotos">
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+            <div class="photo">
+                <img src="placeholder-image.png">
+                <figcaption>Image Title</figcaption>
+            </div>
+        </div>
+    </div>
+
+        <div id="paragraf">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsum fugiat maxime, vero similique, nam officiis repellat, 
+        deleniti nulla libero ullam totam. Culpa fugiat doloremque deserunt necessitatibus possimus quam voluptate officiis nemo, 
+        corporis expedita, quis aperiam nihil nam iure assumenda vitae illum delectus nisi ipsam excepturi? 
+        Blanditiis qui sapiente corrupti esse quia maxime unde culpa! Minima harum nesciunt corrupti animi et velit, 
+        ratione facere earum quia sint voluptatem, voluptatum odio inventore nam voluptate nisi cum! Nisi commodi architecto porro 
+        voluptatibus animi sit in voluptatem reprehenderit autem, dolor harum esse recusandae dolores impedit laudantium maxime 
+        perspiciatis rerum ea ducimus omnis quisquam doloribus.</p>
+        </div>
+
+
+
+</body>
+</html>
